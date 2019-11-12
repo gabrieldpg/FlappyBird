@@ -1,20 +1,5 @@
-﻿  InputManager.cpp
-c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\inputmanager.cpp(10): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-          and
-          [
-              T=int
-          ]
-c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\inputmanager.cpp(9): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-          and
-          [
-              T=int
-          ]
+﻿  Game.cpp
+  main.cpp
+  StateMachine.cpp
+  Generating Code...
   FlappyBird.vcxproj -> C:\Users\Gabriel\Documents\Programming Projects\FlappyBird\FlappyBird\FlappyBird\Debug\FlappyBird.exe
