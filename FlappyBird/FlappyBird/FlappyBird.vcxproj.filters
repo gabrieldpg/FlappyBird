@@ -5,13 +5,13 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source Files\Resources">
+    <Filter Include="Resources">
       <UniqueIdentifier>{22bd58d2-de44-417c-8f63-a8f46b5f0005}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Resources\fonts">
+    <Filter Include="Resources\fonts">
       <UniqueIdentifier>{eab79f88-8601-4871-936f-ae9c2f8eaab3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Resources\res">
+    <Filter Include="Resources\res">
       <UniqueIdentifier>{a9c0a649-867a-4b90-8f3b-9a305469046f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -32,6 +32,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SplashState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -57,77 +60,80 @@
     <ClInclude Include="DEFINITIONS.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Font Include="Resources\fonts\arial.ttf">
-      <Filter>Source Files\Resources\fonts</Filter>
-    </Font>
-    <Font Include="Resources\fonts\FlappyFont.ttf">
-      <Filter>Source Files\Resources\fonts</Filter>
-    </Font>
-    <Font Include="Resources\fonts\MarkerFelt.ttf">
-      <Filter>Source Files\Resources\fonts</Filter>
-    </Font>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Resources\res\bird-01.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\bird-02.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\bird-03.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\bird-04.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\Bronze-Medal.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\Game-Over-Body.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\Game-Over-Title.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\Gold-Medal.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\InvisibleScoringPipe.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\land.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\PipeDown.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\PipeUp.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\Platinum-Medal.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\PlayButton.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\Silver-Medal.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\sky.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\title.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-    <Image Include="Resources\res\Splash_Background.png">
-      <Filter>Source Files\Resources\res</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Resource.resx">
+    <ClInclude Include="MainMenuState.hpp">
       <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Filter>Resources</Filter>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </Font>
+    <Font Include="..\Resources\fonts\FlappyFont.ttf">
+      <Filter>Resources\fonts</Filter>
+    </Font>
+    <Font Include="..\Resources\fonts\MarkerFelt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\res\bird-01.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\bird-02.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\bird-03.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\bird-04.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\Bronze-Medal.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\Game-Over-Body.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\Game-Over-Title.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\Gold-Medal.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\InvisibleScoringPipe.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\land.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\PipeDown.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\PipeUp.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\Platinum-Medal.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\PlayButton.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\Silver-Medal.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\sky.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\Splash_Background.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\title.png">
+      <Filter>Resources\res</Filter>
+    </Image>
   </ItemGroup>
 </Project>

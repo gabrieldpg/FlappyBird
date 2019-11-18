@@ -127,6 +127,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainMenuState.cpp" />
     <ClCompile Include="SplashState.cpp" />
     <ClCompile Include="StateMachine.cpp" />
   </ItemGroup>
@@ -135,37 +136,38 @@
     <ClInclude Include="DEFINITIONS.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="InputManager.hpp" />
+    <ClInclude Include="MainMenuState.hpp" />
     <ClInclude Include="SplashState.hpp" />
     <ClInclude Include="State.hpp" />
     <ClInclude Include="StateMachine.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <Font Include="Resources\fonts\arial.ttf" />
-    <Font Include="Resources\fonts\FlappyFont.ttf" />
-    <Font Include="Resources\fonts\MarkerFelt.ttf" />
+    <EmbeddedResource Include="Resource.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Resources\res\bird-01.png" />
-    <Image Include="Resources\res\bird-02.png" />
-    <Image Include="Resources\res\bird-03.png" />
-    <Image Include="Resources\res\bird-04.png" />
-    <Image Include="Resources\res\Bronze-Medal.png" />
-    <Image Include="Resources\res\Game-Over-Body.png" />
-    <Image Include="Resources\res\Game-Over-Title.png" />
-    <Image Include="Resources\res\Gold-Medal.png" />
-    <Image Include="Resources\res\InvisibleScoringPipe.png" />
-    <Image Include="Resources\res\land.png" />
-    <Image Include="Resources\res\PipeDown.png" />
-    <Image Include="Resources\res\PipeUp.png" />
-    <Image Include="Resources\res\Platinum-Medal.png" />
-    <Image Include="Resources\res\PlayButton.png" />
-    <Image Include="Resources\res\Silver-Medal.png" />
-    <Image Include="Resources\res\sky.png" />
-    <Image Include="Resources\res\Splash_Background.png" />
-    <Image Include="Resources\res\title.png" />
+    <Font Include="..\Resources\fonts\arial.ttf" />
+    <Font Include="..\Resources\fonts\FlappyFont.ttf" />
+    <Font Include="..\Resources\fonts\MarkerFelt.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Resource.resx" />
+    <Image Include="..\Resources\res\bird-01.png" />
+    <Image Include="..\Resources\res\bird-02.png" />
+    <Image Include="..\Resources\res\bird-03.png" />
+    <Image Include="..\Resources\res\bird-04.png" />
+    <Image Include="..\Resources\res\Bronze-Medal.png" />
+    <Image Include="..\Resources\res\Game-Over-Body.png" />
+    <Image Include="..\Resources\res\Game-Over-Title.png" />
+    <Image Include="..\Resources\res\Gold-Medal.png" />
+    <Image Include="..\Resources\res\InvisibleScoringPipe.png" />
+    <Image Include="..\Resources\res\land.png" />
+    <Image Include="..\Resources\res\PipeDown.png" />
+    <Image Include="..\Resources\res\PipeUp.png" />
+    <Image Include="..\Resources\res\Platinum-Medal.png" />
+    <Image Include="..\Resources\res\PlayButton.png" />
+    <Image Include="..\Resources\res\Silver-Medal.png" />
+    <Image Include="..\Resources\res\sky.png" />
+    <Image Include="..\Resources\res\Splash_Background.png" />
+    <Image Include="..\Resources\res\title.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,7 +18,6 @@ namespace Gabijects
 	private:
 		GameDataRef _data;
 		sf::Clock _clock;
-		sf::Texture _backgroundTexture;
 		sf::Sprite _background;
 	};
 }
