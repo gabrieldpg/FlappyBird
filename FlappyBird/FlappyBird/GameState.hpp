@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "State.hpp"
 #include "Game.hpp"
+#include "Pipe.hpp"
 
 namespace Gabijects
 {
@@ -18,5 +19,6 @@ namespace Gabijects
 	private:
 		GameDataRef _data;
 		sf::Sprite _background;
+		Pipe *pipe;
 	};
 }

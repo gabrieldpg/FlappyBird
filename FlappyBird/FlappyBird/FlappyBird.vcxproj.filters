@@ -43,6 +43,9 @@
     <ClCompile Include="GameOverState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Pipe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="State.hpp">
@@ -73,6 +76,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="GameOverState.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

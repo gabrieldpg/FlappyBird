@@ -13,3 +13,6 @@
 #define GAME_BACKGROUND_FILEPATH "../Resources/res/sky.png"
 
 #define GAME_OVER_BACKGROUND_FILEPATH "../Resources/res/sky.png"
+
+#define PIPE_UP_FILEPATH "../Resources/res/PipeUp.png"
+#define PIPE_DOWN_FILEPATH "../Resources/res/PipeDown.png"
