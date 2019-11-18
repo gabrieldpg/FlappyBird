@@ -11,3 +11,5 @@
 #define PLAY_BUTTON_FILEPATH "../Resources/res/PlayButton.png"
 
 #define GAME_BACKGROUND_FILEPATH "../Resources/res/sky.png"
+
+#define GAME_OVER_BACKGROUND_FILEPATH "../Resources/res/sky.png"
