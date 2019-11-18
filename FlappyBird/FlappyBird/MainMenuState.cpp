@@ -1,5 +1,6 @@
 #include <sstream>
 #include "MainMenuState.hpp"
+#include "GameState.hpp"
 #include "DEFINITIONS.hpp"
 #include <iostream>
 
@@ -39,7 +40,7 @@ namespace Gabijects
 			if (_data->input.IsSpriteClicked(_playButton,
 				sf::Mouse::Left, _data->window))
 			{
-				std::cout << "Go To Game Screen" << std::endl;
+				_data->machine.AddState(StateRef(new GameState(_data)), true);
 			}
 		}
 	}
