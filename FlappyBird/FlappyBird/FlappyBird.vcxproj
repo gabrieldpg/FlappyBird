@@ -142,7 +142,7 @@
   <ItemGroup>
     <Font Include="Resources\fonts\arial.ttf" />
     <Font Include="Resources\fonts\FlappyFont.ttf" />
-    <Font Include="Resources\fonts\Marker Felt.ttf" />
+    <Font Include="Resources\fonts\MarkerFelt.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\res\bird-01.png" />
@@ -161,7 +161,7 @@
     <Image Include="Resources\res\PlayButton.png" />
     <Image Include="Resources\res\Silver-Medal.png" />
     <Image Include="Resources\res\sky.png" />
-    <Image Include="Resources\res\Splash Background.png" />
+    <Image Include="Resources\res\Splash_Background.png" />
     <Image Include="Resources\res\title.png" />
   </ItemGroup>
   <ItemGroup>

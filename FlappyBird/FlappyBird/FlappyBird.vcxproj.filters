@@ -65,7 +65,7 @@
     <Font Include="Resources\fonts\FlappyFont.ttf">
       <Filter>Source Files\Resources\fonts</Filter>
     </Font>
-    <Font Include="Resources\fonts\Marker Felt.ttf">
+    <Font Include="Resources\fonts\MarkerFelt.ttf">
       <Filter>Source Files\Resources\fonts</Filter>
     </Font>
   </ItemGroup>
@@ -118,10 +118,10 @@
     <Image Include="Resources\res\sky.png">
       <Filter>Source Files\Resources\res</Filter>
     </Image>
-    <Image Include="Resources\res\Splash Background.png">
+    <Image Include="Resources\res\title.png">
       <Filter>Source Files\Resources\res</Filter>
     </Image>
-    <Image Include="Resources\res\title.png">
+    <Image Include="Resources\res\Splash_Background.png">
       <Filter>Source Files\Resources\res</Filter>
     </Image>
   </ItemGroup>
