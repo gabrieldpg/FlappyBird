@@ -46,6 +46,9 @@
     <ClCompile Include="Pipe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Land.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="State.hpp">
@@ -79,6 +82,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Pipe.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Land.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
