@@ -1,10 +1,15 @@
 #include "Game.hpp"
 #include "SplashState.hpp"
 
+#include <stdlib.h>
+#include <time.h>
+
 namespace Gabijects
 {
 	Game::Game(int width, int height, std::string title)
 	{
+		srand(time(NULL));
+
 		_data->window.create(sf::VideoMode(width, height),
 			title, sf::Style::Close | sf::Style::Titlebar);
 

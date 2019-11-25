@@ -5,6 +5,7 @@
 #include "Game.hpp"
 #include "Pipe.hpp"
 #include "Land.hpp"
+#include "Bird.hpp"
 
 namespace Gabijects
 {
@@ -20,8 +21,12 @@ namespace Gabijects
 	private:
 		GameDataRef _data;
 		sf::Sprite _background;
+
 		Pipe *pipe;
 		Land *land;
-		sf::Clock clock;
+		Bird *bird;
+
+
+		sf::Clock _clock;
 	};
 }
