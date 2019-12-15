@@ -21,6 +21,7 @@ namespace Gabijects
 		GameDataRef _data;
 		sf::Sprite _birdSprite;
 		int _birdState;
+		float _rotation;
 
 		std::vector<sf::Texture> _animationFrames;
 		unsigned int _animationIterator;
