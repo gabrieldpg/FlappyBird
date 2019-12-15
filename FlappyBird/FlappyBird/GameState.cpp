@@ -25,6 +25,8 @@ namespace Gabijects
 
 		_background.setTexture(this->_data->assets.GetTexture(
 			"Game Background"));
+
+		_gameState = GameStates::eReady;
 	}
 
 	void GameState::HandleInput()
@@ -41,29 +43,60 @@ namespace Gabijects
 			if (_data->input.IsSpriteClicked(_background,
 				sf::Mouse::Left, _data->window))
 			{
-				bird->Tap();
+				if (_gameState != GameStates::eGameOver)
+				{
+					_gameState = GameStates::ePlaying;
+					bird->Tap();
+				}
 			}
 		}
 	}
 
 	void GameState::Update(float dt)
 	{
-		pipe->MovePipes(dt);
-		land->MoveLand(dt);
-
-		if (_clock.getElapsedTime().asSeconds() > PIPE_SPAWN_FREQUENCY)
+		if (_gameState != GameStates::eGameOver)
 		{
-			pipe->RandomisePipeOffset();
-
-			pipe->SpawnInvisiblePipe();
-			pipe->SpawnBottomPipe();
-			pipe->SpawnTopPipe();
-
-			_clock.restart();
+			bird->Animate(dt);
+			land->MoveLand(dt);
 		}
 
-		bird->Animate(dt);
-		bird->Update(dt);
+		if (_gameState == GameStates::ePlaying)
+		{
+			pipe->MovePipes(dt);
+
+			if (_clock.getElapsedTime().asSeconds() > PIPE_SPAWN_FREQUENCY)
+			{
+				pipe->RandomisePipeOffset();
+
+				pipe->SpawnInvisiblePipe();
+				pipe->SpawnBottomPipe();
+				pipe->SpawnTopPipe();
+
+				_clock.restart();
+			}
+
+			bird->Update(dt);
+
+			std::vector<sf::Sprite> landSprites = land->GetSprites();
+
+			for (int i = 0; i < landSprites.size(); i++)
+			{
+				if (collision.CheckSpriteCollision(bird->GetSprite(), 0.7f, landSprites.at(i), 1.0f))
+				{
+					_gameState = GameStates::eGameOver;
+				}
+			}
+		}
+
+		std::vector<sf::Sprite> pipeSprites = pipe->GetSprites();
+
+		for (int i = 0; i < pipeSprites.size(); i++)
+		{
+			if (collision.CheckSpriteCollision(bird->GetSprite(), 0.625f, pipeSprites.at(i), 1.0f))
+			{
+				_gameState = GameStates::eGameOver;
+			}
+		}
 	}
 
 	void GameState::Draw(float dt)

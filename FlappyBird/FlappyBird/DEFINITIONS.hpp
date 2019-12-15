@@ -25,7 +25,7 @@
 #define BIRD_FRAME_4_FILEPATH "../Resources/res/bird-04.png"
 
 #define PIPE_MOVEMENT_SPEED 200.0f
-#define PIPE_SPAWN_FREQUENCY 1.0f
+#define PIPE_SPAWN_FREQUENCY 2.5f
 
 #define BIRD_ANIMATION_DURATION 0.4f
 
@@ -40,3 +40,10 @@
 
 #define ROTATION_SPEED 100.0f
 #define MAX_ROTATION 25.0F
+
+enum GameStates
+{
+	eReady, 
+	ePlaying, 
+	eGameOver
+};

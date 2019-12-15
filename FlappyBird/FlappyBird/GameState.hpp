@@ -6,6 +6,7 @@
 #include "Pipe.hpp"
 #include "Land.hpp"
 #include "Bird.hpp"
+#include "Collision.hpp"
 
 namespace Gabijects
 {
@@ -25,8 +26,10 @@ namespace Gabijects
 		Pipe *pipe;
 		Land *land;
 		Bird *bird;
-
+		Collision collision;
 
 		sf::Clock _clock;
+
+		int _gameState;
 	};
 }
