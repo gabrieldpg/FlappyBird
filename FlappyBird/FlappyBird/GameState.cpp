@@ -96,21 +96,18 @@ namespace Gabijects
 					_clock.restart();
 				}
 			}
-		}
 
-		std::vector<sf::Sprite> pipeSprites = pipe->GetSprites();
+			std::vector<sf::Sprite> pipeSprites = pipe->GetSprites();
 
-		for (int i = 0; i < pipeSprites.size(); i++)
-		{
-			if (collision.CheckSpriteCollision(bird->GetSprite(), 0.625f, pipeSprites.at(i), 1.0f))
+			for (int i = 0; i < pipeSprites.size(); i++)
 			{
-				_gameState = GameStates::eGameOver;
-				_clock.restart();
+				if (collision.CheckSpriteCollision(bird->GetSprite(), 0.625f, pipeSprites.at(i), 1.0f))
+				{
+					_gameState = GameStates::eGameOver;
+					_clock.restart();
+				}
 			}
-		}
 
-		if (_gameState == GameStates::ePlaying)
-		{
 			std::vector<sf::Sprite> &scoringSprites = pipe->GetScoringSprites();
 
 			for (int i = 0; i < scoringSprites.size(); i++)
@@ -130,7 +127,7 @@ namespace Gabijects
 
 			if (_clock.getElapsedTime().asSeconds() > TIME_BEFORE_GAME_OVER_APPEARS)
 			{
-				_data->machine.AddState(StateRef(new GameOverState(_data)), true);
+				_data->machine.AddState(StateRef(new GameOverState(_data, _score)), true);
 			}
 		}
 	}
