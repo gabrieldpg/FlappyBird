@@ -7,6 +7,7 @@
 #include "Land.hpp"
 #include "Bird.hpp"
 #include "Collision.hpp"
+#include "Flash.hpp"
 
 namespace Gabijects
 {
@@ -27,6 +28,7 @@ namespace Gabijects
 		Land *land;
 		Bird *bird;
 		Collision collision;
+		Flash *flash;
 
 		sf::Clock _clock;
 

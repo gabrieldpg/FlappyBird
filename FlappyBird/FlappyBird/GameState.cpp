@@ -22,6 +22,7 @@ namespace Gabijects
 		pipe = new Pipe(_data);
 		land = new Land(_data);
 		bird = new Bird(_data);
+		flash = new Flash(_data);
 
 		_background.setTexture(this->_data->assets.GetTexture(
 			"Game Background"));
@@ -97,6 +98,11 @@ namespace Gabijects
 				_gameState = GameStates::eGameOver;
 			}
 		}
+
+		if (_gameState == GameStates::eGameOver)
+		{
+			flash->Show(dt);
+		}
 	}
 
 	void GameState::Draw(float dt)
@@ -107,6 +113,7 @@ namespace Gabijects
 		pipe->DrawPipes();
 		land->DrawLand();
 		bird->Draw();
+		flash->Draw();
 
 		_data->window.display();
 	}
