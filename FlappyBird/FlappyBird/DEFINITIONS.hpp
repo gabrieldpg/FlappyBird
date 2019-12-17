@@ -16,6 +16,7 @@
 
 #define PIPE_UP_FILEPATH "../Resources/res/PipeUp.png"
 #define PIPE_DOWN_FILEPATH "../Resources/res/PipeDown.png"
+#define SCORING_PIPE_FILEPATH "../Resources/res/InvisibleScoringPipe.png"
 
 #define LAND_FILEPATH "../Resources/res/Land.png"
 
@@ -23,6 +24,8 @@
 #define BIRD_FRAME_2_FILEPATH "../Resources/res/bird-02.png"
 #define BIRD_FRAME_3_FILEPATH "../Resources/res/bird-03.png"
 #define BIRD_FRAME_4_FILEPATH "../Resources/res/bird-04.png"
+
+#define FLAPPY_FONT_FILEPATH "../Resources/fonts/FlappyFont.ttf"
 
 #define PIPE_MOVEMENT_SPEED 200.0f
 #define PIPE_SPAWN_FREQUENCY 2.5f
@@ -49,3 +52,4 @@ enum GameStates
 };
 
 #define FLASH_SPEED 1500.0f
+

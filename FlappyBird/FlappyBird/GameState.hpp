@@ -8,6 +8,7 @@
 #include "Bird.hpp"
 #include "Collision.hpp"
 #include "Flash.hpp"
+#include "HUD.hpp"
 
 namespace Gabijects
 {
@@ -29,9 +30,12 @@ namespace Gabijects
 		Bird *bird;
 		Collision collision;
 		Flash *flash;
+		HUD *hud;
 
 		sf::Clock _clock;
 
 		int _gameState;
+
+		int _score;
 	};
 }

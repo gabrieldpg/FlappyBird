@@ -36,6 +36,14 @@ namespace Gabijects
 		pipeSprites.push_back(sprite);
 	}
 
+	void Pipe::SpawnScoringPipe()
+	{
+		sf::Sprite sprite(_data->assets.GetTexture("Scoring Pipe"));
+		sprite.setPosition(_data->window.getSize().x, 0);
+
+		scoringPipes.push_back(sprite);
+	}
+
 	void Pipe::MovePipes(float dt)
 	{
 		for (unsigned short int i = 0; i < pipeSprites.size(); i++)
@@ -50,6 +58,19 @@ namespace Gabijects
 				pipeSprites.at(i).move(-movement, 0);
 			}
 
+		}
+
+		for (unsigned short int i = 0; i < scoringPipes.size(); i++)
+		{
+			if (scoringPipes.at(i).getPosition().x < 0 - scoringPipes.at(i).getGlobalBounds().width)
+			{
+				scoringPipes.erase(scoringPipes.begin() + i);
+			}
+			else
+			{
+				float movement = PIPE_MOVEMENT_SPEED * dt;
+				scoringPipes.at(i).move(-movement, 0);
+			}
 		}
 	}
 
@@ -69,5 +90,10 @@ namespace Gabijects
 	const std::vector<sf::Sprite> &Pipe::GetSprites() const
 	{
 		return pipeSprites;
+	}
+
+	std::vector<sf::Sprite> &Pipe::GetScoringSprites()
+	{
+		return scoringPipes;
 	}
 }
