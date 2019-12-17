@@ -1,6 +1,7 @@
 #include <sstream>
 #include "GameState.hpp"
 #include "DEFINITIONS.hpp"
+#include "GameOverState.hpp"
 #include <iostream>
 
 namespace Gabijects
@@ -92,6 +93,7 @@ namespace Gabijects
 				if (collision.CheckSpriteCollision(bird->GetSprite(), 0.7f, landSprites.at(i), 1.0f))
 				{
 					_gameState = GameStates::eGameOver;
+					_clock.restart();
 				}
 			}
 		}
@@ -103,6 +105,7 @@ namespace Gabijects
 			if (collision.CheckSpriteCollision(bird->GetSprite(), 0.625f, pipeSprites.at(i), 1.0f))
 			{
 				_gameState = GameStates::eGameOver;
+				_clock.restart();
 			}
 		}
 
@@ -124,6 +127,11 @@ namespace Gabijects
 		if (_gameState == GameStates::eGameOver)
 		{
 			flash->Show(dt);
+
+			if (_clock.getElapsedTime().asSeconds() > TIME_BEFORE_GAME_OVER_APPEARS)
+			{
+				_data->machine.AddState(StateRef(new GameOverState(_data)), true);
+			}
 		}
 	}
 
