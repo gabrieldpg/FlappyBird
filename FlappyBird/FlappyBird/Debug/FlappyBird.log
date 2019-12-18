@@ -1,8 +1,88 @@
-﻿  HUD.cpp
+﻿  AssetManager.cpp
+  Bird.cpp
+  Collision.cpp
+  Flash.cpp
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\flash.cpp(17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\flash.cpp(21): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\flash.cpp(29): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\flash.cpp(33): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Game.cpp
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\game.cpp(11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  GameOverState.cpp
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\gameoverstate.cpp(56): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\gameoverstate.cpp(58): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\gameoverstate.cpp(65): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\gameoverstate.cpp(72): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  GameState.cpp
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\gamestate.cpp(88): warning C4018: '<': signed/unsigned mismatch
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\gamestate.cpp(99): warning C4018: '<': signed/unsigned mismatch
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\gamestate.cpp(110): warning C4018: '<': signed/unsigned mismatch
+  HUD.cpp
 c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\hud.cpp(14): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
 c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\hud.cpp(14): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  InputManager.cpp
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\inputmanager.cpp(10): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\inputmanager.cpp(9): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  Land.cpp
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\land.cpp(27): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+  main.cpp
+  MainMenuState.cpp
+  Pipe.cpp
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\pipe.cpp(15): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\pipe.cpp(24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\pipe.cpp(24): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\pipe.cpp(32): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\pipe.cpp(42): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  SplashState.cpp
+  StateMachine.cpp
+  Compiling...
+  Generating Code...
   FlappyBird.vcxproj -> C:\Users\Gabriel\Documents\Programming Projects\FlappyBird\FlappyBird\FlappyBird\Debug\FlappyBird.exe
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\statemachine.hpp(14): warning C26495: Variable 'Gabijects::StateMachine::_isRemoving' is uninitialized. Always initialize a member variable (type.6).
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\gameoverstate.cpp(10): warning C26495: Variable 'Gabijects::GameOverState::_highScore' is uninitialized. Always initialize a member variable (type.6).
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\gamestate.cpp(9): warning C26495: Variable 'Gabijects::GameState::pipe' is uninitialized. Always initialize a member variable (type.6).
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\main.cpp(8): warning C26444: Avoid unnamed objects with custom construction and destruction (es.84).

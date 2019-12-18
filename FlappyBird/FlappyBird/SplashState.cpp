@@ -10,10 +10,8 @@ namespace Gabijects
 
 	void SplashState::Init()
 	{
-		_data->assets.LoadTexture("Splash State Background", 
-			SPLASH_SCENE_BACKGROUND_FILEPATH);
-		_background.setTexture(this->_data->assets.GetTexture(
-			"Splash State Background"));
+		_data->assets.LoadTexture("Splash State Background", SPLASH_SCENE_BACKGROUND_FILEPATH);
+		_background.setTexture(this->_data->assets.GetTexture("Splash State Background"));
 	}
 
 	void SplashState::HandleInput()

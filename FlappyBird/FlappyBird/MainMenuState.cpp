@@ -10,13 +10,11 @@ namespace Gabijects
 
 	void MainMenuState::Init()
 	{
-		_data->assets.LoadTexture("Main Menu Background",
-			MAIN_MENU_BACKGROUND_FILEPATH);
+		_data->assets.LoadTexture("Main Menu Background", MAIN_MENU_BACKGROUND_FILEPATH);
 		_data->assets.LoadTexture("Game Title", GAME_TITLE_FILEPATH);
 		_data->assets.LoadTexture("Play Button",PLAY_BUTTON_FILEPATH);
 
-		_background.setTexture(this->_data->assets.GetTexture(
-			"Main Menu Background"));
+		_background.setTexture(this->_data->assets.GetTexture("Main Menu Background"));
 		_title.setTexture(this->_data->assets.GetTexture("Game Title"));
 		_playButton.setTexture(this->_data->assets.GetTexture("Play Button"));
 
@@ -24,6 +22,7 @@ namespace Gabijects
 			_title.getGlobalBounds().height / 2);
 		_playButton.setPosition((SCREEN_WIDTH / 2) - (_playButton.getGlobalBounds().width / 2),
 			(SCREEN_HEIGHT / 2) - (_playButton.getGlobalBounds().height / 2));
+
 	}
 
 	void MainMenuState::HandleInput()
