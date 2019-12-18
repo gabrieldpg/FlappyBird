@@ -10,8 +10,7 @@ namespace Gabijects
 
 	void GameState::Init()
 	{
-		_data->assets.LoadTexture("Game Background",
-			GAME_BACKGROUND_FILEPATH);
+		_data->assets.LoadTexture("Game Background", GAME_BACKGROUND_FILEPATH);
 		_data->assets.LoadTexture("Pipe Up", PIPE_UP_FILEPATH);
 		_data->assets.LoadTexture("Pipe Down", PIPE_DOWN_FILEPATH);
 		_data->assets.LoadTexture("Land", LAND_FILEPATH);
@@ -28,8 +27,7 @@ namespace Gabijects
 		flash = new Flash(_data);
 		hud = new HUD(_data);
 
-		_background.setTexture(this->_data->assets.GetTexture(
-			"Game Background"));
+		_background.setTexture(this->_data->assets.GetTexture("Game Background"));
 
 		_score = 0;
 		hud->UpdateScore(_score);
@@ -43,13 +41,12 @@ namespace Gabijects
 
 		while (_data->window.pollEvent(event))
 		{
-			if (sf::Event::Closed == event.type)
+			if (event.type == sf::Event::Closed)
 			{
 				_data->window.close();
 			}
 
-			if (_data->input.IsSpriteClicked(_background,
-				sf::Mouse::Left, _data->window))
+			if (_data->input.IsSpriteClicked(_background, sf::Mouse::Left, _data->window))
 			{
 				if (_gameState != GameStates::eGameOver)
 				{

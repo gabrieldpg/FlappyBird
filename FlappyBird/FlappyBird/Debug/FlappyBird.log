@@ -1,1 +1,8 @@
-﻿
+﻿  HUD.cpp
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\hud.cpp(14): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\gabriel\documents\programming projects\flappybird\flappybird\flappybird\flappybird\hud.cpp(14): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  FlappyBird.vcxproj -> C:\Users\Gabriel\Documents\Programming Projects\FlappyBird\FlappyBird\FlappyBird\Debug\FlappyBird.exe

@@ -11,7 +11,7 @@ namespace Gabijects
 		_scoreText.setCharacterSize(128);
 		_scoreText.setFillColor(sf::Color::White);
 		_scoreText.setOrigin(_scoreText.getGlobalBounds().width / 2, _scoreText.getGlobalBounds().height / 2);
-		_scoreText.setPosition(_data->window.getSize().x / 2, _data->window.getSize().y / 5);
+		_scoreText.setPosition(_data->window.getSize().x / 1.25, _data->window.getSize().y / 8);
 	}
 
 	void HUD::Draw()

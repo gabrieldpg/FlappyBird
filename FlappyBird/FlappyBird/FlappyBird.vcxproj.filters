@@ -177,10 +177,10 @@
     <Image Include="..\Resources\res\sky.png">
       <Filter>Resources\res</Filter>
     </Image>
-    <Image Include="..\Resources\res\Splash_Background.png">
+    <Image Include="..\Resources\res\title.png">
       <Filter>Resources\res</Filter>
     </Image>
-    <Image Include="..\Resources\res\title.png">
+    <Image Include="..\Resources\res\Splash_Background.png">
       <Filter>Resources\res</Filter>
     </Image>
   </ItemGroup>
