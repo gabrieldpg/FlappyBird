@@ -9,7 +9,9 @@ namespace Gabijects
 	class MainMenuState : public State
 	{
 	public:
+		// Constructor takes in game data reference
 		MainMenuState(GameDataRef data);
+
 		void Init();
 		void HandleInput();
 		void Update(float dt);
@@ -17,6 +19,7 @@ namespace Gabijects
 
 	private:
 		GameDataRef _data;
+		// Sprites for background image, title image and play button image
 		sf::Sprite _background;
 		sf::Sprite _title;
 		sf::Sprite _playButton;

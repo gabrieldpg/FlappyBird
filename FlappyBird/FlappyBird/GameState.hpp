@@ -15,7 +15,9 @@ namespace Gabijects
 	class GameState : public State
 	{
 	public:
+		// Constructor takes in game data reference
 		GameState(GameDataRef data);
+
 		void Init();
 		void HandleInput();
 		void Update(float dt);
@@ -23,19 +25,20 @@ namespace Gabijects
 
 	private:
 		GameDataRef _data;
-		sf::Sprite _background;
+		sf::Sprite _background;		// sprite which holds background
 
+		// pointers to pipes, land and bird
 		Pipe *pipe;
 		Land *land;
 		Bird *bird;
-		Collision collision;
-		Flash *flash;
-		HUD *hud;
+
+		Collision collision;	// collision detection
+		Flash *flash;			// flash for game over
+		HUD *hud;				// heads up display
 
 		sf::Clock _clock;
 
-		int _gameState;
-
-		int _score;
+		int _gameState;			// game state currently (eg ready, playing, gameover)
+		int _score;				// score at certain point in time in game
 	};
 }
