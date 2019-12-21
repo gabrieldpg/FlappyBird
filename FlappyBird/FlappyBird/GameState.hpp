@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include "State.hpp"
 #include "Game.hpp"
 #include "Pipe.hpp"
@@ -25,7 +26,16 @@ namespace Gabijects
 
 	private:
 		GameDataRef _data;
-		sf::Sprite _background;		// sprite which holds background
+
+		sf::Sprite _background;
+
+		sf::SoundBuffer _hitSoundBuffer;
+		sf::SoundBuffer _pointSoundBuffer;
+		sf::SoundBuffer _wingSoundBuffer;
+
+		sf::Sound _hitSound;
+		sf::Sound _pointSound;
+		sf::Sound _wingSound;
 
 		// pointers to pipes, land and bird
 		Pipe *pipe;

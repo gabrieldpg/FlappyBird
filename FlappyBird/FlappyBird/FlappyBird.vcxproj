@@ -185,6 +185,11 @@
     <Image Include="..\Resources\res\Splash_Background.png" />
     <Image Include="..\Resources\res\title.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Resources\audio\Hit.wav" />
+    <Media Include="..\Resources\audio\Point.wav" />
+    <Media Include="..\Resources\audio\Wing.wav" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

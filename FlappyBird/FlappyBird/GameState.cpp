@@ -11,6 +11,27 @@ namespace Gabijects
 
 	void GameState::Init()
 	{
+		// load all sounds to their buffer
+		if (!_hitSoundBuffer.loadFromFile(HIT_SOUND_FILEPATH))
+		{
+			std::cout << "Error loading Hit Sound Effect" << std::endl;
+		}
+
+		if (!_pointSoundBuffer.loadFromFile(POINT_SOUND_FILEPATH))
+		{
+			std::cout << "Error loading Point Sound Effect" << std::endl;
+		}
+
+		if (!_wingSoundBuffer.loadFromFile(WING_SOUND_FILEPATH))
+		{
+			std::cout << "Error loading Wing Sound Effect" << std::endl;
+		}
+
+		// set all sounds from their buffers
+		_hitSound.setBuffer(_hitSoundBuffer);
+		_pointSound.setBuffer(_pointSoundBuffer);
+		_wingSound.setBuffer(_wingSoundBuffer);
+
 		// load all textures needed for background, pipes, land, birds and font
 		_data->assets.LoadTexture("Game Background", GAME_BACKGROUND_FILEPATH);
 		_data->assets.LoadTexture("Land", LAND_FILEPATH);
@@ -66,6 +87,9 @@ namespace Gabijects
 					// set game state to playing and tap bird
 					_gameState = GameStates::ePlaying;
 					bird->Tap();
+
+					// play wing sound
+					_wingSound.play();
 				}
 			}
 		}
@@ -119,6 +143,9 @@ namespace Gabijects
 					// game is over, and restart the clock
 					_gameState = GameStates::eGameOver;
 					_clock.restart();
+
+					// play hit sound
+					_hitSound.play();
 				}
 			}
 
@@ -134,6 +161,9 @@ namespace Gabijects
 					// game is over, and restart the clock
 					_gameState = GameStates::eGameOver;
 					_clock.restart();
+
+					// play hit sound
+					_hitSound.play();
 				}
 			}
 
@@ -152,6 +182,9 @@ namespace Gabijects
 					_score++;
 					hud->UpdateScore(_score);
 					scoringSprites.erase(scoringSprites.begin() + i);
+
+					// play score sound
+					_pointSound.play();
 				}
 			}
 		}

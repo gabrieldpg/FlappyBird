@@ -14,6 +14,9 @@
     <Filter Include="Resources\res">
       <UniqueIdentifier>{a9c0a649-867a-4b90-8f3b-9a305469046f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\audio">
+      <UniqueIdentifier>{fc5af454-2613-480c-abff-08f7102c428a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -183,5 +186,16 @@
     <Image Include="..\Resources\res\Splash_Background.png">
       <Filter>Resources\res</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Resources\audio\Hit.wav">
+      <Filter>Resources\audio</Filter>
+    </Media>
+    <Media Include="..\Resources\audio\Point.wav">
+      <Filter>Resources\audio</Filter>
+    </Media>
+    <Media Include="..\Resources\audio\Wing.wav">
+      <Filter>Resources\audio</Filter>
+    </Media>
   </ItemGroup>
 </Project>

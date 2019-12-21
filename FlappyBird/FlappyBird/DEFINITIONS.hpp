@@ -15,6 +15,9 @@
 
 // Game state definitions
 #define GAME_BACKGROUND_FILEPATH "../Resources/res/sky.png"
+#define HIT_SOUND_FILEPATH "../Resources/audio/Hit.wav"
+#define POINT_SOUND_FILEPATH "../Resources/audio/Point.wav"
+#define WING_SOUND_FILEPATH "../Resources/audio/Wing.wav"
 enum GameStates { eReady, ePlaying, eGameOver };
 
 // Game over state definitions
