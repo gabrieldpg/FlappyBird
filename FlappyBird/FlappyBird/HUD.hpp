@@ -9,7 +9,9 @@ namespace Gabijects
 	class HUD
 	{
 	public:
+		// Constructor takes in game data reference
 		HUD(GameDataRef data);
+
 		void Draw();
 		void UpdateScore(int score);
 

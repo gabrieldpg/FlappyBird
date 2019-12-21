@@ -10,18 +10,25 @@ namespace Gabijects
 	class Pipe
 	{
 	public:
+		// Empty constructor and destructor
 		Pipe(GameDataRef data);
 
+		// Set pipe sprite texture, position and add to its vector
 		void SpawnBottomPipe();
 		void SpawnTopPipe();
 		void SpawnInvisiblePipe();
 		void SpawnScoringPipe();
 
+		// Move pipes to the left continuously
 		void MovePipes(float dt);
 		void DrawPipes();
+
+		// Sets pipe spawn y offset randomly
 		void RandomisePipeOffset();
 
+		// Get constant reference to pipe sprites
 		const std::vector<sf::Sprite> &GetSprites() const;
+		// Get modifieable reference to scoring sprites
 		std::vector<sf::Sprite> &GetScoringSprites();
 
 	private:
@@ -30,6 +37,6 @@ namespace Gabijects
 		std::vector<sf::Sprite> scoringPipes;
 
 		int _landHeight;
-		int _pipeSpawnYOffset;
+		int _pipeSpawnYOffset;	// Y offset so pipes are in difference positions
 	};
 }

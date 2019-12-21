@@ -8,8 +8,10 @@ namespace Gabijects
 	{
 	public:
 		Collision();
+
+		// Check if sprites are colliding
 		bool CheckSpriteCollision(sf::Sprite sprite1, sf::Sprite sprite2);
-		bool CheckSpriteCollision(sf::Sprite sprite1, float scale1,
-			sf::Sprite sprite2, float scale2);
+		// Check if sprites are colliding, using a scale
+		bool CheckSpriteCollision(sf::Sprite sprite1, float scale1, sf::Sprite sprite2, float scale2);
 	};
 }

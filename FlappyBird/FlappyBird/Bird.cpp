@@ -2,6 +2,7 @@
 
 namespace Gabijects
 {
+	// constructor saves game data reference
 	Bird::Bird(GameDataRef data) : _data(data)
 	{
 		// start animation iterator to 0 and add bird frames to vector
