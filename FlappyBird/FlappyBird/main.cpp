@@ -1,3 +1,12 @@
+/*
+
+Flappy Bird by Gabriel
+
+Credits to Sonar Systems YouTube tutorial
+
+*/
+
+
 #include <iostream>
 
 #include "Game.hpp"
